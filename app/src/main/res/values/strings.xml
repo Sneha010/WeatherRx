@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Weather_RxAndroid</string>
+
+    <!-- Weather-->
+    <string name="h_weather">Weather</string>
+    <string name="degcelcius">°C</string>
+    <string name="degfaran">°F</string>
+    <string name="milesperhour">mph</string>
+    <string name="low">Low:</string>
+    <string name="high">High:</string>
+    <string name="morning">Morning:</string>
+    <string name="evening">Evening:</string>
+    <string name="night">Night:</string>
+    <string name="winds">Wind:</string>
+    <string name="condition">Condition:</string>
+    <string name="today">TODAY</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="credits">Credits</string>
+
+    <string name="no_internet_connectivity">No Internet Connectivity</string>
+    <string name="server_error">Could not connect to server</string>
+    <string name="tag_not_found">Unexpected response found!</string>
+    <string name="not_available">Not Available</string>
+</resources>

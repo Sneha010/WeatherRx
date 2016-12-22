@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rlError"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="15dp"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="15dp"
+              android:visibility="gone"
+    >
+
+
+    <com.sneha.weather.widget.MyCustomFontRegular
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_internet_connectivity"
+        android:textSize="@dimen/medium"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/errorMessage"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/refresh_icon"/>
+
+    <com.sneha.weather.widget.MyCustomFontRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tap to retry"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
