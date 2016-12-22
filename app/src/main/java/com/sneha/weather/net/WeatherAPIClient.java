@@ -25,6 +25,7 @@ import rx.schedulers.Schedulers;
  * Created by Sneha Khadatare : 587823
  * on 6/8/2016.
  */
+//Ref : https://inthecheesefactory.com/blog/retrofit-2.0/en
 public class WeatherAPIClient {
 
     private WeatherRestAPI mWeatherRestAPIService;
@@ -81,25 +82,6 @@ public class WeatherAPIClient {
                     }
                 });
 
-       /* observable.enqueue(new Callback<WeatherMainModel>() {
-            @Override
-            public void onResponse(Call<WeatherMainModel> call, Response<WeatherMainModel> response) {
-
-                WeatherMainModel bean = response.body();
-                networkListener.onSuccess(bean);
-
-            }
-
-            @Override
-            public void onFailure(Call<WeatherMainModel> call, Throwable t) {
-
-                Log.d("@@@", "onFailure: "+t);
-
-                FailureResponse errorResponse = GeneralUtils.buildFailureResponse(t);
-                networkListener.onFailure(errorResponse);
-
-            }
-        });*/
     }
 
 }
