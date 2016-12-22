@@ -15,5 +15,8 @@ public class Constants {
 
     /*Weather URL*/
     public static final String WEATHER_BASE_URL = "http://api.openweathermap.org/";
+
+    /*CITY*/
+    public static final String WEATHER_FOR_CITY = "Amsterdam";
 }
 

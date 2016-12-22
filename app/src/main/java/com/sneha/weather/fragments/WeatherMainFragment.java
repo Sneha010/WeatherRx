@@ -25,6 +25,7 @@ import com.sneha.weather.model.FailureResponse;
 import com.sneha.weather.model.WeatherMainModel;
 import com.sneha.weather.presenter.WeatherPresenter;
 import com.sneha.weather.presenter.WeatherPresenterImpl;
+import com.sneha.weather.utils.Constants;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -116,7 +117,7 @@ public class WeatherMainFragment extends BaseFragment {
                 Toast.makeText(getActivity(), "Hi", Toast.LENGTH_SHORT).show();
                 isRefresh = true;
                 mWeatherMainModel = null;
-                mWeatherPresenter.fetchWeather();
+                mWeatherPresenter.fetchWeather(Constants.WEATHER_FOR_CITY);
             }
         });
 
@@ -133,7 +134,7 @@ public class WeatherMainFragment extends BaseFragment {
         showProgress();
 
         if (mWeatherMainModel == null) {
-            mWeatherPresenter.fetchWeather();
+            mWeatherPresenter.fetchWeather(Constants.WEATHER_FOR_CITY);
         } else {
             displayWeather();
         }

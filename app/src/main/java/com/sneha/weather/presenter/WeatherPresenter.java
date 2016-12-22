@@ -6,5 +6,5 @@ package com.sneha.weather.presenter;
  */
 public interface WeatherPresenter {
 
-    void fetchWeather();
+    void fetchWeather(String city);
 }

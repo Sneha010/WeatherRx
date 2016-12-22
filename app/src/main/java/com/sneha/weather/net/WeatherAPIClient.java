@@ -56,9 +56,9 @@ public class WeatherAPIClient {
         return sWeatherAPIClient;
     }
 
-    public void loadWeather(final NetworkCallResponseListener<WeatherMainModel> networkListener) {
+    public void loadWeather(String city, final NetworkCallResponseListener<WeatherMainModel> networkListener) {
 
-        Observable<WeatherMainModel> observable = mWeatherRestAPIService.loadWeather();
+        Observable<WeatherMainModel> observable = mWeatherRestAPIService.loadWeather(city);
 
 
         observable.subscribeOn(Schedulers.io())

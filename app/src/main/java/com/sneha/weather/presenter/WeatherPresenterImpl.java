@@ -32,8 +32,8 @@ public class WeatherPresenterImpl implements WeatherPresenter {
 
 
     @Override
-    public void fetchWeather() {
-        mWeatherAPIClient.loadWeather(mWeatherNetworkCallResponseListener);
+    public void fetchWeather(String city) {
+        mWeatherAPIClient.loadWeather(city , mWeatherNetworkCallResponseListener);
     }
 
 }
