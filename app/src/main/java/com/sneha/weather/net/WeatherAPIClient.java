@@ -67,7 +67,7 @@ public class WeatherAPIClient {
                 .subscribe(new Subscriber<WeatherMainModel>() {
                     @Override
                     public void onCompleted() {
-
+                        this.unsubscribe();
                     }
 
                     @Override
